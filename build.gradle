@@ -13,12 +13,13 @@ repositories {
         url "https://maven.pkg.github.com/ZeroWasteTeam/SampleJavaMavenPackage"
         credentials {
             username "nachiappannk"
-            password "568ac0bcebeaf01245a75c629e58f53966c29f1d"
+            password "9f00a2029dbc77814f4260032d62c9969454c717"
         }
     }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group:'com.zerowasteteam.samplejavamaven', name:'SampleJavaMavenPackage', version: '0.1.0'
+    compile group:'com.zerowasteteam', name:'SampleJavaMavenPackage', version: '130.146.13-6f0975c'
+
 }
