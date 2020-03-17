@@ -18,12 +18,8 @@ repositories {
     }
 }
 
-task printJavaHome{
-    println System.getenv("PATH")
-}
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group:'com.zerowasteteam', name:'SampleJavaMavenPackage', version: '130.146.13-6f0975c'
+    compile group:'com.zerowasteteam', name:'SampleJavaMavenPackage', version: '150.0.0'
 
 }
