@@ -12,8 +12,8 @@ repositories {
     maven {
         url "https://maven.pkg.github.com/ZeroWasteTeam/SampleJavaMavenPackage"
         credentials {
-            username "nachiappannk"
-            password "9f00a2029dbc77814f4260032d62c9969454c717"
+            username = project.findProperty("build.user") ?: "nachiappannk"
+            password = project.findProperty("build.password") ?: "9f00a2029dbc77814f4260032d62c9969454c717"
         }
     }
 }

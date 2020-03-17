@@ -69,7 +69,7 @@ jobs:
           RELEASE_VERSION=$(ci-getReleaseVersion ${CI_BASE_VERSION} ${CI_BUILD_BRANCH} ${CI_BUILD_SHA})
           echo "::set-env name=CI_RELEASE_VERSION::${RELEASE_VERSION}"
       - name: Gradle Build
-        run: gradle build
+        run: gradle -Pbuild.user="${{ github.actor }}" -Pbuild.password="${{ secrets.GITHUB_TOKEN }}" build
           
       - name: Unit Test
         run: gradle test
