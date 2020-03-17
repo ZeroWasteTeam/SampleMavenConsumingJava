@@ -20,5 +20,5 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group:'com.zerowasteteam', name:'sample-java-maven', version: '150.0.2-cbf4ff4'
+    compile group:'com.zerowasteteam', name:'sample-java-maven', version: '150.0.3-dd73dbf'
 }
