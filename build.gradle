@@ -12,10 +12,14 @@ repositories {
     maven {
         url "https://maven.pkg.github.com/ZeroWasteTeam/SampleJavaMavenPackage"
         credentials {
-            username = project.findProperty("build.user") ?: "nachiappannk"
-            password = project.findProperty("build.password") ?: "9f00a2029dbc77814f4260032d62c9969454c717"
+            username = project.findProperty("build.user") ?: System.getenv("MAVEN_USERNAME")
+            password = project.findProperty("build.password") ?: System.getenv("MAVEN_PASSWORD")
         }
     }
+}
+
+task printJavaHome{
+    println System.getenv("PATH")
 }
 
 dependencies {
