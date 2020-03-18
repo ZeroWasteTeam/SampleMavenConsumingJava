@@ -46,7 +46,7 @@ jobs:
         run: ci-assertVersionIsEqualOrIncremented "${CI_BASE_VERSION}" "${CI_MODIFIED_VERSION}"
       
       - name: PR - Gradle Build
-        run: gradle build
+        run: gradle -Pbuild.user="${{ github.actor }}" -Pbuild.password="${{ secrets.GITHUB_TOKEN }}" build
         
       - name: PR - Gradle Test
         run: gradle test
