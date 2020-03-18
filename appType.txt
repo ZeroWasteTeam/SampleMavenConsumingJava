@@ -1,1 +1,1 @@
-MavenJava
+MavenJava1
