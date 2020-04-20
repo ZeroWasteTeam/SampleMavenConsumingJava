@@ -45,5 +45,5 @@ publishing {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group:'com.zerowasteteam', name:'sample-java-maven', version: '150.0.3-dd73dbf'
+    compile group:'com.zerowasteteam', name:'sample-java-maven', version: '152.3.15-2020-04-20-10-27-44-35c36de'
 }
