@@ -34,7 +34,7 @@ jobs:
         run: ./scripts-build.sh ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }} 
           
       - name: Test Script
-        run: ./scripts-test.sh "{ 'name: 'nachiappan', 'password' : ${{ secrets.GITHUB_TOKEN }} }"
+        run: ./scripts-test.sh "{ 'name': 'nachiappan', 'password' : ${{ secrets.GITHUB_TOKEN }} }"
 
       - name: Publish Script
         run: ./scripts-publish.sh ${{ github.repository }} ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }} ${{ steps.compute-release-version.outputs.version}}
