@@ -37,7 +37,7 @@ jobs:
         run: gradle test
 
       - name: Publish Script
-        run: ./scripts-publish.sh ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }} ${{ steps.compute-release-version.outputs.version}}
+        run: ./scripts-publish.sh ${{ github.repository }} ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }} ${{ steps.compute-release-version.outputs.version}}
 
 
 
