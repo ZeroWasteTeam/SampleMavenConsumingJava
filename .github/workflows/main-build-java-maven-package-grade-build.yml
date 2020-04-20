@@ -31,7 +31,7 @@ jobs:
         run: chmod +x ./scripts-*.sh
 
       - name: Gradle Build
-        run: gradle -Pbuild.user="${{ github.actor }}" -Pgpr.password="${{ secrets.GITHUB_TOKEN }}" build 
+        run: gradle -Pbuild.user="${{ github.actor }}" -Pbuild.password="${{ secrets.GITHUB_TOKEN }}" build 
           
       - name: Unit Test
         run: gradle test
